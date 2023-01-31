@@ -1,5 +1,4 @@
 from discretizar import discretizacion
-from djikstra import *
 from bfs import BFS
 
 def numEnt():
@@ -37,12 +36,6 @@ while (salir != True):
 
   elif opcion == 3:
     print('Djikstra\n')
-    archivo = input("Ingrese el nombre del archivo: ")    
-    imagen = cv2.imread(archivo)
-    resultado = djikstra(imagen,(460,460),(500,80))
-    dibujar_camino(imagen, resultado)
-    plt.imshow(imagen)
-    plt.show()
 
   elif opcion == 4:
     print('Gracias por utilizar el programa\n')
